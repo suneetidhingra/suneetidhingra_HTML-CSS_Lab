@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        background-color: rgba(255,255,255,0.548);
+
+    }
+    video{
+        position: fixed;
+
+    }
+
+    div{
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        min-width: 650px;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding-left: 40px; 
+    }
+    input:focus{
+        outline:none;
+        color: white;
+        background-color: rgba(126, 189, 241, 0.35);
+    }
+    input{
+
+        height: 45px;
+        width: 60%;
+
+    }
+
+    button{
+        margin:20px;
+        width: 80px;
+        border-radius: 14px;
+        height: 30px;
+        color: white;
+        font-size: 18px;
+        border: none;
+        background-color: rgb(175,102,243);
+    }
+
+</style>
+<body>
+    <section id ="block">
+        <video autoplay muted loop>
+            <source src="/home/suneetomdhingra/Desktop/background.mp4" type="video/mp4">
+
+
+        </video>
+        <div>
+            <form action ="" id="lab-form">
+                <h1>Create Gmail Account</h1>
+                <input type="text" title="name" placeholder="Full Name" required>
+                <br>
+                <br>
+                <input type="number" title="contact_no" min="6000000000" max="9999999999" placeholder="number" required>
+                <br>
+                <br>
+                <input type="email" title="email" placeholder="Enter email id" required>
+                <br>
+                <button form="lab-form">Reset</button>
+                <button form="lab-form">Submit</button>
+
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
